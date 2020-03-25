@@ -54,13 +54,13 @@ const pets = [monty, cheese, lucy, pixis, bella];
 function logOutThings(array) {
     console.log('Here are your ', array.length, ' things!');
     let i = 0;
-   for(let i = 0; i < array.length; i++) {
-       const item = array[i];
-       if(array[i].rescue === true){
-           console.log('Rescue Animal', item)
+    for(let i = 0; i < array.length; i++) {
+        const item = array[i];
+        if(array[i].rescue === true){
+            console.log('Rescue Animal', item)
         } else {
             console.log('Not Rescue Animal', item)
-        }
+        };
     };
 };
  
