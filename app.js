@@ -8,15 +8,15 @@ const monty = {
     age: '6 months',
     rescue: true,
     owner: 'lucia'
-    };
+};
 
-    const cheese = {
+const cheese = {
     species: 'cat',
     color: 'orange-white',
     age: '7 months',
     rescue: true,
     owner: 'nicole'
-    };
+};
 
 const lucy = {
     species: 'cat',
@@ -24,7 +24,7 @@ const lucy = {
     age: '2 years',
     rescue: true,
     owner: 'gail'
-    };
+};
 
 const pixis ={
     species: 'dog',
@@ -32,25 +32,25 @@ const pixis ={
     age: '10 years',
     rescue: true,
     owner: 'gail'
-    };
+};
 
-    const bella = {
+const bella = {
     species: 'dog',
     color: 'tan',
     age: '8 years',
     rescue: true,
     owner: 'gail'
-    }
+};
 
 const pets = [monty, cheese, lucy, pixis, bella];
 const petNames = ['monty', 'cheese', 'lucy', 'pixis', 'bella']
 
-function logOutThings(x) {
-    console.log('Here are your ', x.length, ' things!');
-   for(let i = 0; i <x.length; i++){
-        console.log(petNames[i]);
-        console.log(pets[i]);
+function logOutThings(category, dataSet) {
+    console.log('Here are your ', dataSet.length, ' things!');
+   for(let i = 0; i <dataSet.length; i++){
+        console.log(category[i]);
+        console.log(dataSet[i]);
     };
 };
  
-logOutThings(pets);
+logOutThings(petNames, pets);
