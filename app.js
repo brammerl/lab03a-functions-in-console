@@ -44,7 +44,11 @@ const bella = {
 
 const pets = [monty, cheese, lucy, pixis, bella];
 
-for (let i = 0; i < pets.length; i++) {
-    console.log(pets[i]);
+function logOutThings() {
+    console.log('Here are your ', pets.length, ' things!');
+    for (let i = 0; i < pets.length; i++) {
+     console.log(pets[i]);
+    };
 };
 
+logOutThings();
