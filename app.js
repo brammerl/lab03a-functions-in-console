@@ -3,54 +3,65 @@ document.body.style.color = 'orange';
 
 
 const monty = {
+    name: 'monty',
     species: 'cat',
     color: 'grey-white',
-    age: '6 months',
+    age: .5,
     rescue: true,
     owner: 'lucia'
 };
 
 const cheese = {
+    name: 'cheese',
     species: 'cat',
     color: 'orange-white',
-    age: '7 months',
-    rescue: true,
+    age: .5,
+    rescue: false,
     owner: 'nicole'
 };
 
 const lucy = {
+    name: 'lucy',
     species: 'cat',
     color: 'grey-white',
-    age: '2 years',
+    age: 2,
     rescue: true,
     owner: 'gail'
 };
 
 const pixis ={
+    name: 'pixis',
     species: 'dog',
     color: 'tan',
-    age: '10 years',
+    age: 10,
     rescue: true,
-    owner: 'gail'
+    owner: 'gail',
+    
 };
 
 const bella = {
+    name: 'pixis',
     species: 'dog',
     color: 'tan',
-    age: '8 years',
-    rescue: true,
+    age: 10,
+    rescue: false,
     owner: 'gail'
 };
 
-const pets = [monty, cheese, lucy, pixis, bella];
-const petNames = ['monty', 'cheese', 'lucy', 'pixis', 'bella']
+const pets = [monty, cheese, lucy, pixis, bella]; 
 
-function logOutThings(category, dataSet) {
-    console.log('Here are your ', dataSet.length, ' things!');
-   for(let i = 0; i <dataSet.length; i++){
-        console.log(category[i]);
-        console.log(dataSet[i]);
+
+function logOutThings(array) {
+    console.log('Here are your ', array.length, ' things!');
+    let i = 0;
+   for(let i = 0; i < array.length; i++) {
+       const item = array[i];
+       if(array[i].rescue === true){
+           console.log('Rescue Animal', item)
+        } else {
+            console.log('Not Rescue Animal', item)
+        }
     };
 };
  
-logOutThings(petNames, pets);
+logOutThings(pets);
