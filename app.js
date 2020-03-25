@@ -45,12 +45,12 @@ const pixis ={
 const pets = [monty, cheese, lucy, pixis, bella];
 const petNames = ['monty', 'cheese', 'lucy', 'pixis', 'bella']
 
-function logOutThings() {
-    console.log('Here are your ', pets.length, ' things!');
-    for(let i = 0; i <pets.length; i++){
+function logOutThings(x) {
+    console.log('Here are your ', x.length, ' things!');
+   for(let i = 0; i <x.length; i++){
         console.log(petNames[i]);
         console.log(pets[i]);
     };
 };
-
-logOutThings();
+ 
+logOutThings(pets);
